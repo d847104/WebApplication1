@@ -13,7 +13,6 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //rock and roll
             if (Request.Form["user"] != null && Request.Form["passwd"] != null && Request.Form["name"] != null)
             {
                 string s_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["AccountsConnectionString"].ConnectionString;
